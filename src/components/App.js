@@ -28,7 +28,7 @@
 import React, { Component, useState } from "react";
 import { Route, Switch, useLocation, Link } from "react-router-dom";
 import "../styles/App.css";
-function LocationDisplay() {
+export function LocationDisplay() {
   let location = useLocation();
   return <div data-testid="location-display">{location.pathname}</div>;
 }
@@ -65,4 +65,3 @@ class App extends Component {
 }
 
 export default App;
-// export const LocationDisplay = LocationDisplayComponent;
