@@ -14,7 +14,7 @@ class App extends Component {
         {/* <a href="/about">About</a>  */}
         {/* <a href="/">Home</a> */}
         <Link to="/">Home</Link>
-        <LocationDisplay />
+        <LocationDisplay data-testid="location-display" />
         <Switch>
           <Route path="/about" component={About} />
           <Route exact path="/" component={Home} />
