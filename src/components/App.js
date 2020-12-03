@@ -47,6 +47,10 @@ function About() {
   );
 }
 
+function NoMatch() {
+  return <div>No Match</div>;
+}
+
 class App extends Component {
   render() {
     return (
@@ -56,7 +60,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/about" component={About} />
           <Route exact path="/" component={Home} />
-          <Route path="/" component={() => <div>No match</div>} />
+          <Route path="/" component={NoMatch} />
         </Switch>
         <LocationDisplay />
       </div>
